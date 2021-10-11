@@ -4,7 +4,7 @@ const Nav =()=>{
   return(
     <>
       <div>
-        <h1>Site map</h1>
+        <h1>Nav</h1>
       </div>
     </>
   )
