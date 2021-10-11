@@ -1,0 +1,18 @@
+# ignore all logs
+logs
+**/logs
+
+*.log
+**/*.log
+
+.cache/
+**/.cache/
+
+node_modules/
+**/node_modules/
+
+.DS_Store
+**/.DS_Store
+
+dist/*
+**/dist/*
