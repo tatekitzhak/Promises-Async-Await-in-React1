@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import SideBar from './sideBar';
+import NavigationBar from './navBarTask2';
 
 import Home from './pages/home';
 import About from './pages/about';
@@ -8,7 +8,7 @@ import Users from './pages/users';
 import Login from './pages/login';
 
 
-function MainSideBar2() {
+function MainTask2() {
 
 
   return (
@@ -17,8 +17,8 @@ function MainSideBar2() {
         <div >
             <div className="border-end bg-white">
                 <div className="sidebar-heading border-bottom bg-light text-center">
-                  <h1>Side Bar 2 </h1>
-                  <SideBar/>
+                  <h1>Task 2 </h1>
+                  <NavigationBar/>
                 </div>
 
             </div>
@@ -43,4 +43,4 @@ function MainSideBar2() {
 };
 
 
-export default MainSideBar2;
+export default MainTask2;

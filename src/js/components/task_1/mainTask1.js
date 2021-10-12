@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Switch, Route, Redirect,useLocation, useParams
 import {SidebarProvider, PageProvider} from './dataContext';
 import {ContentProvider, ContentContext} from './data_management/contentContext';
 import Content from './content';
-import SideBar from './sideBar';
+import NavigationBar from './navBarTask1';
 import Item from './pages/item';
 
 
 
-function SideBarApp() {
+function MainTask1() {
 
 
   return(
@@ -17,7 +17,7 @@ function SideBarApp() {
 
         <div className="col-md-3 pull-md-right">
           <SidebarProvider>
-            <SideBar/>
+            <NavigationBar/>
           </SidebarProvider>
         </div>
 
@@ -44,4 +44,4 @@ function SideBarApp() {
 
 };
 
-export default SideBarApp;
+export default MainTask1;

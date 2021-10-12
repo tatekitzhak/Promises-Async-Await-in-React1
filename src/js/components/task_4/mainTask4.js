@@ -7,7 +7,7 @@ import {NBAPlayerProvider} from './nbaPlayerContext';
 import {PlayerContext} from './nbaPlayerContext';
 //https://www.youtube.com/watch?v=35lXWvCuM8o&ab_channel=DevEd
 
-function NBAPlayer() {
+function MainTask4() {
   return(
         <>
           <div>
@@ -22,4 +22,4 @@ function NBAPlayer() {
   );}
 
 
-export default NBAPlayer;
+export default MainTask4;

@@ -3,13 +3,35 @@ import { Link } from "react-router-dom";
 import waveicon2 from '../../../src/assets/images/waveicon2.png';
 import { useHistory } from "react-router-dom";
 
+const nameLinks = [{
+                  path: '/',
+                  title: 'Home',
+                }, {
+                  path: '/contact-us',
+                  title: 'Contact',
+                }, {
+                  path: '/Task-1',
+                  title: 'Task 1',
+                }, {
+                  path: '/Task-2',
+                  title: 'Task 2',
+                },
+                {
+                  path: '/Task-3',
+                  title: 'Task 3',
+                },
+                {
+                  path: '/Task-4',
+                  title: 'Task 4',
+                },
+                {
+                  path: '/Task-5',
+                  title: 'Task 5',
+                }
+              ];
+
 function Header(props) {
       const history = useHistory();
-
-      function handleClick(e ) {
-        e.preventDefault();
-        console.log('You clicked Link site map.', e);
-      };
 
       const redirect = () => {
         let path = `/side-bar-1`;
@@ -18,7 +40,6 @@ function Header(props) {
         // history.push(path);
         // history.goBack();
     }
-
 
     return (
         <>
@@ -32,31 +53,20 @@ function Header(props) {
 
                   <div id="navbarSupportedContent" className="collapse navbar-collapse">
                     <ul className="navbar-nav ml-auto">
-                      <li className="nav-item">
-                        <Link to="/" className="nav-link">HOME <span className="sr-only">(current)</span> </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to="/contact-us" className="nav-link" >CONTACT</Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/Task-1" className="nav-link text-uppercase"
-                              onClick={redirect}>
-                              Task 1
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/Task-2" className="nav-link text-uppercase">Task 2</Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/Task-3" className="nav-link text-uppercase">Task 3</Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link to="/Task-4" className="nav-link text-uppercase" >Task 4</Link>
-                      </li>
+                    {
+                      nameLinks.map(({path, title}, key) => {
+                        return (
+                                <li key={key}>
+                                  <Link className="nav-link text-uppercase"
+                                        to={{
+                                              pathname:`${path}`
+                                              }}>
+                                    {title}
+                                  </Link>
+                                </li>
+                              )
+                        })
+                    }
                     </ul>
                   </div>
                 </div>

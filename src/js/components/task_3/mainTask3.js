@@ -48,7 +48,7 @@ const CountContextB = React.createContext("countB");
 
 
 
-export default function Sitemap({authorized}) {
+export default function MainTask3({authorized}) {
   const [count, setCount] = useState([10,30,50,70,90]);
   const [count2, setCount2] = useState(20);
 

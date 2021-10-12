@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react';
 import {CategoriesContext} from './dataContext';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function SideBar(){
+function NavigationBar(){
   const [categories, setCategories] = useContext(CategoriesContext);
 
   const dispatcher = (event) =>{
@@ -15,7 +15,7 @@ function SideBar(){
       <div id="sidebar-wrapper">
           <div className="border-end bg-white">
               <div className="sidebar-heading border-bottom bg-light">
-                <h1>Side Bar </h1>
+                <h1>Navigation Bar Task 1</h1>
               </div>
               <div className="list-group list-group-flush">
                 {
@@ -46,4 +46,4 @@ function SideBar(){
 };
 
 
-export default SideBar;
+export default NavigationBar;
