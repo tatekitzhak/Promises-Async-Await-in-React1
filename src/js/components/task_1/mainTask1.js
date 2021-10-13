@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect,useLocation, useParams} from "react-router-dom";
 import {SidebarProvider, PageProvider} from './dataContext';
 import {ContentProvider, ContentContext} from './data_management/contentContext';
+
 import Content from './content';
 import NavigationBar from './navBarTask1';
 import Item from './pages/item';
