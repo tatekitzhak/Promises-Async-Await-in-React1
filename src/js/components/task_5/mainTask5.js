@@ -2,7 +2,7 @@ import React, {useState, useReducer, createContext} from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Reducer1 from './reducer1';
 import Reducer2 from './reducer2';
-
+import Component1 from './component1';
 
 function MainTask5() {
   return (
@@ -15,7 +15,7 @@ function MainTask5() {
 
               </div>
             </div>
-              <Reducer1/>
+              <Component1/>
           </div>
       </Router>
     </>

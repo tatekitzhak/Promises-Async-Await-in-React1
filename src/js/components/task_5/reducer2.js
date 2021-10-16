@@ -23,7 +23,7 @@ function Reducer2() {
     <>
       <h1>  {data.counter} </h1>
       <button onClick={()=>dispatch({type: 'Inc', value: 2})}> Inc: </button>
-      <button onClick={()=>dispatch({type: 'Dec', value: 4})}> Decr: </button>
+      <button onClick={()=>dispatch({type: 'Dec', value: 2})}> Decr: </button>
       <button onClick={()=>dispatch({type: 'Reset'})}> Reset: </button>
     </>
   )
